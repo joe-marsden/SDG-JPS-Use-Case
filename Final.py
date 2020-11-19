@@ -154,3 +154,7 @@ print(str(round(CO2tonperhour, 3)), "tonnes per hour of CO2 are produced by the 
 
 # CO2 produced per hour compared to the OWL file value
 print("This is", str(round(CO2tonperhour/float(b), 3)), "times the quoted value in the OWL file")
+
+#scoring indicator 
+indicator= (44/12) * q / (E * HHV * 0.0399)
+print("indicator: CO2 emission per unit of value added is", str(round(indicator,3)), "kg/pounds")
