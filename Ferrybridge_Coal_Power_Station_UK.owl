@@ -1,0 +1,112 @@
+<rdf:RDF
+    xmlns:j.0="http://www.theworldavatar.com/ontology/ontocape/supporting_concepts/space_and_time/space_and_time.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.1="http://www.theworldavatar.com/ontology/ontocape/upper_level/system.owl#"
+    xmlns:j.2="http://www.theworldavatar.com/ontology/ontocape/upper_level/coordinate_system.owl#"
+    xmlns:j.3="http://www.theworldavatar.com/ontology/ontoeip/upper_level/system_v1.owl#"
+    xmlns:j.4="http://www.theworldavatar.com/ontology/ontocape/supporting_concepts/space_and_time/space_and_time_extended.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns="http://www.semanticweb.org/kevin/ontologies/2018/8/untitled-ontology-1852#"
+    xmlns:terms="http://purl.org/dc/terms/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.5="http://www.theworldavatar.com/ontology/ontocape/upper_level/technical_system.owl#"
+    xmlns:j.6="http://www.theworldavatar.com/ontology/ontoeip/system_aspects/system_realization.owl#"
+    xmlns:j.7="http://www.theworldavatar.com/ontology/ontoeip/system_aspects/system_performance.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:j.8="http://www.theworldavatar.com/ontology/ontoeip/powerplants/PowerPlant.owl#">
+  <owl:Ontology rdf:about="http://www.semanticweb.org/kevin/ontologies/2018/8/untitled-ontology-1852">
+    <owl:imports rdf:resource="http://www.theworldavatar.com/ontology/ontoeip/powerplants/PowerPlant.owl"/>
+    <owl:imports rdf:resource="http://www.theworldavatar.com/ontology/ontocape/supporting_concepts/SI_unit/derived_SI_units.owl"/>
+  </owl:Ontology>
+  <j.8:PowerPlant rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#Ferrybridge_Coal_Power_Station_UK">
+    <j.3:isOwnedBy>
+      <j.3:Organization rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#Owner_of_Ferrybridge_Coal_Power_Station_UK">
+        <j.3:hasName>RWE_npower</j.3:hasName>
+      </j.3:Organization>
+    </j.3:isOwnedBy>
+    <j.1:hasAddress rdf:resource="http://dbpedia.org/resource/United_Kingdom"/>
+    <j.4:hasGISCoordinateSystem>
+      <j.4:ProjectedCoordinateSystem rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#CoordinateSystem_of_Ferrybridge_Coal_Power_Station_UK">
+        <j.4:hasProjectedCoordinate_x>
+          <j.0:StraightCoordinate rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#x_coordinate_of_Ferrybridge_Coal_Power_Station_UK">
+            <j.1:hasValue>
+              <j.2:CoordinateValue rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#v_x_coordinate_of_Ferrybridge_Coal_Power_Station_UK">
+                <j.1:numericalValue>-1.28058</j.1:numericalValue>
+                <j.1:hasUnitOfMeasure rdf:resource="http://www.theworldavatar.com/ontology/ontocape/supporting_concepts/SI_unit/SI_unit.owl#m"/>
+              </j.2:CoordinateValue>
+            </j.1:hasValue>
+            <j.2:refersToAxis rdf:resource="http://www.theworldavatar.com/ontology/ontocape/supporting_concepts/space_and_time/space_and_time.owl#x-axis"/>
+            <j.1:hasDimension rdf:resource="http://www.theworldavatar.com/ontology/ontocape/supporting_concepts/physical_dimension/physical_dimension.owl#length"/>
+          </j.0:StraightCoordinate>
+        </j.4:hasProjectedCoordinate_x>
+        <j.4:hasProjectedCoordinate_y>
+          <j.0:StraightCoordinate rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#y_coordinate_of_Ferrybridge_Coal_Power_Station_UK">
+            <j.1:hasValue>
+              <j.2:CoordinateValue rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#v_y_coordinate_of_Ferrybridge_Coal_Power_Station_UK">
+                <j.1:numericalValue>53.7174</j.1:numericalValue>
+                <j.1:hasUnitOfMeasure rdf:resource="http://www.theworldavatar.com/ontology/ontocape/supporting_concepts/SI_unit/SI_unit.owl#m"/>
+              </j.2:CoordinateValue>
+            </j.1:hasValue>
+            <j.2:refersToAxis rdf:resource="http://www.theworldavatar.com/ontology/ontocape/supporting_concepts/space_and_time/space_and_time.owl#y-axis"/>
+            <j.1:hasDimension rdf:resource="http://www.theworldavatar.com/ontology/ontocape/supporting_concepts/physical_dimension/physical_dimension.owl#length"/>
+          </j.0:StraightCoordinate>
+        </j.4:hasProjectedCoordinate_y>
+      </j.4:ProjectedCoordinateSystem>
+    </j.4:hasGISCoordinateSystem>
+    <j.5:realizes>
+      <rdf:Description rdf:about="http://www.theworldavatar.com/ontology/ontoeip/powerplants/PowerPlant.owl#CoalGeneration">
+        <j.8:consumesPrimaryFuel rdf:resource="http://www.theworldavatar.com/ontology/ontoeip/powerplants/PowerPlant.owl#CoalBiomass"/>
+        <j.7:hasEmission>
+          <j.7:CO2_emission rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#CO2Emission_of_Ferrybridge_Coal_Power_Station_UK">
+            <j.1:hasValue>
+              <j.1:ScalarValue rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#v_CO2Emission_of_Ferrybridge_Coal_Power_Station_UK">
+                <j.1:numericalValue>1142.4</j.1:numericalValue>
+                <j.1:hasUnitOfMeasure rdf:resource="http://www.theworldavatar.com/ontology/ontocape/supporting_concepts/SI_unit/derived_SI_units.owl#ton_per_hr"/>
+              </j.1:ScalarValue>
+            </j.1:hasValue>
+          </j.7:CO2_emission>
+        </j.7:hasEmission>
+        <j.7:hasCosts>
+          <j.7:GenerationCosts rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#GenerationCost_of_Ferrybridge_Coal_Power_Station_UK">
+            <j.1:hasValue>
+              <j.1:ScalarValue rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#v_GenerationCost_of_Ferrybridge_Coal_Power_Station_UK">
+                <j.1:numericalValue>0</j.1:numericalValue>
+                <j.1:hasUnitOfMeasure rdf:resource="http://www.theworldavatar.com/ontology/ontocape/supporting_concepts/SI_unit/derived_SI_units.owl#USD_per_kW"/>
+              </j.1:ScalarValue>
+            </j.1:hasValue>
+          </j.7:GenerationCosts>
+        </j.7:hasCosts>
+        <j.8:hasAnnualGeneration>
+          <j.8:AnnualGeneration rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#AnnualGeneration_of_Ferrybridge_Coal_Power_Station_UK">
+            <j.1:hasValue>
+              <j.1:ScalarValue rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#v_AnnualGeneration_of_Ferrybridge_Coal_Power_Station_UK">
+                <j.1:numericalValue>6351414</j.1:numericalValue>
+                <j.1:hasUnitOfMeasure rdf:resource="http://www.theworldavatar.com/ontology/ontocape/supporting_concepts/SI_unit/derived_SI_units.owl#MWh"/>
+              </j.1:ScalarValue>
+            </j.1:hasValue>
+          </j.8:AnnualGeneration>
+        </j.8:hasAnnualGeneration>
+        <j.8:usesGenerationTechnology rdf:resource="http://www.theworldavatar.com/ontology/ontoeip/powerplants/PowerPlant.owl#SubCriticalThermal"/>
+      </rdf:Description>
+    </j.5:realizes>
+    <j.6:designCapacity>
+      <j.6:DesignCapacity rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#capa_of_Ferrybridge_Coal_Power_Station_UK">
+        <j.1:hasValue>
+          <j.1:ScalarValue rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#v_capa_of_Ferrybridge_Coal_Power_Station_UK">
+            <j.1:numericalValue>1428</j.1:numericalValue>
+            <j.1:hasUnitOfMeasure rdf:resource="http://www.theworldavatar.com/ontology/ontocape/supporting_concepts/SI_unit/derived_SI_units.owl#MW"/>
+          </j.1:ScalarValue>
+        </j.1:hasValue>
+      </j.6:DesignCapacity>
+    </j.6:designCapacity>
+    <j.8:hasYearOfBuilt>
+      <j.8:YearOfBuilt rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#YearOfBuilt_of_Ferrybridge_Coal_Power_Station_UK">
+        <j.1:hasValue>
+          <j.1:ScalarValue rdf:about="http://www.theworldavatar.com/kb/powerplants/Ferrybridge_Coal_Power_Station_UK.owl#v_YearOfBuilt_of_Ferrybridge_Coal_Power_Station_UK">
+            <j.1:numericalValue>1979</j.1:numericalValue>
+          </j.1:ScalarValue>
+        </j.1:hasValue>
+      </j.8:YearOfBuilt>
+    </j.8:hasYearOfBuilt>
+  </j.8:PowerPlant>
+</rdf:RDF>
